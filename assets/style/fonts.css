@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'TBC Contractica CAPS';
+    src: url('../font/TBCContracticaCAPS-Black.woff2') format('woff2'),
+        url('../font/TBCContracticaCAPS-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BPG Arial Caps 2010';
+    src: url('../font/BPGArialCaps2010.woff2') format('woff2'),
+        url('../font/BPGArialCaps2010.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BPG Arial';
+    src: url('../font/BPGArial.woff2') format('woff2'),
+        url('../font/BPGArial.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TBC Contractica CAPS';
+    src: url('../font/TBCContracticaCAPS-Bold.woff2') format('woff2'),
+        url('../font/TBCContracticaCAPS-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TBC Contractica CAPS';
+    src: url('../font/TBCContracticaCAPS-Medium.woff2') format('woff2'),
+        url('../font/TBCContracticaCAPS-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TBC Contractica CAPS';
+    src: url('../font/TBCContracticaCAPS-Light.woff2') format('woff2'),
+        url('../font/TBCContracticaCAPS-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TBC Contractica CAPS';
+    src: url('../font/TBCContracticaCAPS-Regular.woff2') format('woff2'),
+        url('../font/TBCContracticaCAPS-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TBC Contractica CAPS Book';
+    src: url('../font/TBCContracticaCAPS-Book.woff2') format('woff2'),
+        url('../font/TBCContracticaCAPS-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
