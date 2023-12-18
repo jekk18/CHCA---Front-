@@ -50,4 +50,60 @@ $('.down-scroll-box').click(function() {
   }, 500); 
 });
 
+$('.show-more-load').click(function(){
+  $('.cir-text').toggleClass('active-text-height');
+  $(this).toggleClass('rotate-arrow');
+});
+
+
+
+// Carousell
+ $(document).ready(function(){
+    $('#owl-carousel-1 ').owlCarousel({
+      loop: true,
+      items: 5,
+      margin: 10,  
+      nav: true, 
+      autoplay:true,
+      autoplayTimeout:3000, 
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 3
+        },
+        1400:{
+          items: 4
+        },
+        1920: {
+          items: 5
+        }
+      }
+    });
+    $('#owl-carousel-2').owlCarousel({
+      loop: true,
+      items: 5,
+      margin: 10,  
+      nav: true, 
+      // autoplay:true,
+      // autoplayTimeout:3000, 
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 3
+        },
+        1400:{
+          items: 4
+        },
+        1920: {
+          items: 5
+        }
+      }
+    });
+  });
+// Carousell
+
  
