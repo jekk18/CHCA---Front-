@@ -33,13 +33,20 @@ $(document).ready(function () {
  
 $(document).ready(function() { 
   var initScrollTop = $(window).scrollTop(); 
-  $('.parallax-banner').css({'background-position-y' : (initScrollTop/50)+'%'}); 
+  $('.parallax-banner').css({'background-position-y' : (initScrollTop/75)+'%'}); 
   $(window).scroll(function() { 
     var scrollTop = $(window).scrollTop(); 
-    $('.parallax-banner').css({'background-position-y' : (scrollTop/50)+'%'}); 
+    $('.parallax-banner').css({'background-position-y' : (scrollTop/75)+'%'}); 
   }); 
 });
-
+$(document).ready(function() { 
+  var initScrollTop = $(window).scrollTop(); 
+  $('.parallax-banner-4').css({'background-position-y' : (initScrollTop/90)+'%'}); 
+  $(window).scroll(function() { 
+    var scrollTop = $(window).scrollTop(); 
+    $('.parallax-banner-4').css({'background-position-y' : (scrollTop/90)+'%'}); 
+  }); 
+});
 
 $('.down-scroll-box').click(function() { 
   var parallaxBannerHeight = $('.parallax-banner').outerHeight();
@@ -55,7 +62,26 @@ $('.show-more-load').click(function(){
   $(this).toggleClass('rotate-arrow');
 });
 
-
+$(document).ready(function() {
+  $('.counter').each(function() {
+    var $this = $(this);
+    var countTo = $this.attr('data-count');
+    
+    $({ countNum: $this.text() }).animate({
+      countNum: countTo
+    },
+    {
+      duration: 2000, // Adjust the duration as needed
+      easing: 'linear', // Use 'linear' for a constant speed counter-up
+      step: function() {
+        $this.text(Math.floor(this.countNum));
+      },
+      complete: function() {
+        $this.text(this.countNum);
+      }
+    });
+  });
+});
 
 // Carousell
  $(document).ready(function(){
@@ -66,6 +92,7 @@ $('.show-more-load').click(function(){
       nav: true, 
       autoplay:true,
       autoplayTimeout:3000, 
+      dots: false,
       responsive: {
         0: {
           items: 1
@@ -85,9 +112,7 @@ $('.show-more-load').click(function(){
       loop: true,
       items: 5,
       margin: 10,  
-      nav: true, 
-      // autoplay:true,
-      // autoplayTimeout:3000, 
+      nav: true,  
       responsive: {
         0: {
           items: 1
