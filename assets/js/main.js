@@ -18,14 +18,16 @@ $(".lang-vector").click(function () {
 });
 
 $(document).ready(function () {
-  if ($(".header").hasClass("home-header")) {
-    $(window).scroll(function () {
+  if ($(".header").hasClass("home-header")) { 
+    $(window).scroll(function () { 
       var headSticky = $(".header"),
         scroll = $(window).scrollTop();
-      if (scroll >= 5) {
+      if (scroll >= 5) { 
+        headSticky.css("box-shadow", "0 4px 2px -2px rgba(0, 0, 0, 0.2)");
         headSticky.removeClass("home-header");
       } else {
         headSticky.addClass("home-header");
+        headSticky.css("box-shadow", "none");
       }
     });
   }
@@ -89,6 +91,12 @@ $(document).ready(function() {
       }
     });
   });
+});
+
+$('.click-arrow').click(function(){
+  var faqItem = $(this).closest('.faq-item'); 
+  faqItem.toggleClass('faq-item-active'); 
+  faqItem.siblings('.faq-item').removeClass('faq-item-active');
 });
 
 // Carousell
