@@ -448,7 +448,7 @@ a{
  }
  .owl-carousel .owl-nav button.owl-prev{
     position: absolute;
-    top: 50%;
+    top: 46%;
     left: -50px;
     border-radius: 50%;
     background: rgba(0, 0, 0, 0.4);
@@ -462,7 +462,7 @@ a{
  }
  .owl-carousel .owl-nav button.owl-next{
     position: absolute;
-    top: 50%;
+    top: 46%;
     right: -50px;
     border-radius: 50%;
     background: rgba(0, 0, 0, 0.4);
@@ -551,8 +551,8 @@ a{
         overflow-x: hidden;
     }
     .count-container{ 
-        width: 102%;
-        margin-left: -1%;
+        width: 101%;
+        margin-left: -0.5%;
         padding: 50px 0; 
         position: relative; 
         background-image: repeating-linear-gradient(5deg, rgba(47,93,211,0.2), rgba(47,93,211,0.2) 27.3px, transparent 30px, transparent 50.019999999999996px, rgba(47,93,211,0.2) 52px), repeating-linear-gradient(95deg, rgba(47,93,211,0.2), rgba(47,93,211,0.2) 27.3px, transparent 30px, transparent 50.019999999999996px, rgba(47,93,211,0.2) 52px), repeating-linear-gradient(185deg, rgba(47,93,211,0.2), rgba(47,93,211,0.2) 27.3px, transparent 30px, transparent 50.019999999999996px, rgba(47,93,211,0.2) 52px), repeating-linear-gradient(275deg, rgba(47,93,211,0.2), rgba(47,93,211,0.2) 27.3px, transparent 30px, transparent 50.019999999999996px, rgba(47,93,211,0.2) 52px);
@@ -564,13 +564,14 @@ a{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 60px;
+        gap: 40px;
+        padding: 0 0.5%;
      }
      .counter-item{
         display: flex;
         align-items: flex-start;
         flex-direction: column;
-        width: calc((100% / 4) - 45px);
+        width: calc((100% / 4) - 30px);
         min-width: 340px;
      }
      .count-svg{
@@ -726,6 +727,98 @@ a{
     }
      /* block image section */
 
+    
+    /* Slider - 1 item */
+    .slider-1-item-cont{
+        width: 100%;
+        height: 645px; 
+    }
+    #owl-slider-1-item .item{
+        width: 100%;
+        height: 645px;
+        position: relative;
+    }
+    #owl-slider-1-item .item img{
+        width: 100%;
+        height: 392px;
+        object-fit: cover;
+    }
+    .text-side-slider{
+        width: 100%;
+        padding: 50px 0;
+        background: linear-gradient(to right, #8A2BE2 0%, #4863E1 100%);
+        height: 253px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .text-c-s{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+        padding-right: 20%;
+    }
+    .text-c-s .slider-link-title{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        color: #fff;
+        font-weight: bold;
+        font-size: 34px;
+        font-family: 'TBC Contractica CAPS'; 
+    }
+    .text-c-s .slider-link-text{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        overflow: hidden;
+        color: #fff;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 34px;    
+        font-family: 'BPG Arial'; 
+    }
+    #owl-slider-1-item .owl-nav button.owl-next{
+        bottom: 100px;
+        top: initial;
+        left: initial;
+        right: 8.5%;
+        transform: translateY(0);
+        width: 55px;
+        height: 55px;
+        background: transparent;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        padding: 0!important;
+        padding-left: 5px!important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #owl-slider-1-item .owl-nav button.owl-prev{
+        bottom: 100px;
+        top: initial;
+        left: initial;
+        right: 13%;
+        transform: translateY(0);
+        width: 55px;
+        height: 55px;
+        background: transparent;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        padding: 0!important;
+        padding-right: 2px!important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #owl-slider-1-item  .owl-nav button.owl-prev span,  #owl-slider-1-item  .owl-nav button.owl-next span{
+        font-size: initial; 
+        width: 14px;
+    }
+    /* Slider - 1 item */
 
 
 
@@ -739,7 +832,7 @@ a{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 50px 0;
+        padding-bottom: 50px;
         gap: 50px;
     }
     .footer-box .text{
@@ -776,6 +869,43 @@ a{
     }
     
     /* Footer */
+
+    /* animate slider  */ 
+.animated  {
+    -webkit-animation-duration : 500ms;
+    animation-duration : 500ms;
+    -webkit-animation-fill-mode : both;
+    animation-fill-mode : both;
+  }   
+  .owl-animated-out {
+    z-index : 1;
+     }  
+  .owl-animated-in {
+    z-index : 0; 
+     } 
+  .fadeOut  {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+  }  
+  @-webkit-keyframes  fadeOut  {
+    0% {
+      opacity : 1;
+    }  
+    100% {
+      opacity : 0;
+    }  
+  }
+  @keyframes  fadeOut  {
+    0% {
+      opacity : 1;
+    }  
+    100% {
+      opacity : 0;
+    }  
+  }
+
+    /* animate slider  */
+
 
 
 

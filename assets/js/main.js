@@ -41,10 +41,18 @@ $(document).ready(function() {
 });
 $(document).ready(function() { 
   var initScrollTop = $(window).scrollTop(); 
-  $('.parallax-banner-4').css({'background-position-y' : (initScrollTop/90)+'%'}); 
+  $('.parallax-banner-4').css({'background-position-y' : (initScrollTop/95)+'%'}); 
   $(window).scroll(function() { 
     var scrollTop = $(window).scrollTop(); 
-    $('.parallax-banner-4').css({'background-position-y' : (scrollTop/90)+'%'}); 
+    $('.parallax-banner-4').css({'background-position-y' : (scrollTop/95)+'%'}); 
+  }); 
+});
+$(document).ready(function() { 
+  var initScrollTop = $(window).scrollTop(); 
+  $('.parallax-banner-5').css({'background-position-y' : (initScrollTop/115)+'%'}); 
+  $(window).scroll(function() { 
+    var scrollTop = $(window).scrollTop(); 
+    $('.parallax-banner-5').css({'background-position-y' : (scrollTop/115)+'%'}); 
   }); 
 });
 
@@ -128,7 +136,36 @@ $(document).ready(function() {
         }
       }
     });
+    $('#owl-carousel-3').owlCarousel({
+      loop: true,
+      items: 5,
+      margin: 10,  
+      nav: true, 
+      dots: true, 
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 3
+        },
+        1400:{
+          items: 4
+        },
+        1920: {
+          items: 5
+        }
+      }
+    });
+    $('#owl-slider-1-item').owlCarousel({
+      animateOut: 'fadeOut', 
+      items:1,  
+      smartSpeed:150,
+      nav: true, 
+      dots: false  
+    });
   });
+  
 // Carousell
 
  
