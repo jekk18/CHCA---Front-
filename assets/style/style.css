@@ -397,18 +397,20 @@ a{
     width: 100%;
     height: auto;
     transition: 0.2s; 
+    overflow: hidden;
  }
  .slider-1 .item:hover {
     filter: grayscale(0.3);  
 } 
  .slider-1 .item img{
     width: 100%;
-    display: initial;
+    display: block;
+    transform: scale(1.05);
     height: auto;
     transition: 0.1s;
  }
  .slider-1 .item:hover img{
-    transform: scale(0.98);
+    transform: scale(1);
  }
  .slider-text{
     position: absolute;
@@ -1217,6 +1219,131 @@ a{
         border-bottom: 1px solid #4764E1;
     }
     /* Pagination */
+    /* Contact Page */
+    .contact-section{
+        width: 100%;
+        padding-bottom: 50px;
+        padding-top: 50px; 
+    }
+    .contact-box{
+        width: 100%;
+    }
+    .contact-box h1{
+        margin-bottom: 50px;
+        color: #000;
+        font-size: 32px;
+        font-family: 'TBC Contractica CAPS';
+        font-weight: bold; 
+    }
+    .contact-form form{
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .c-fortm-box{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .contact-input-item{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-input-item label{  
+        position: relative;
+        margin-bottom: 16px;
+        line-height: 30px;
+        color: #474747;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: 'BPG Arial'; 
+        width: fit-content;
+    }
+    .contact-input-item input, .contact-input-item textarea, .contact-input-item select{
+        border: none;
+        outline: none;
+        border-radius: 6px;
+        background: rgba(29, 48, 218, 0.1);
+        padding: 0 30px;
+        font-size: 18px;
+        color: #787878;
+        font-family: 'BPG Arial';  
+        height: 60px;
+        resize: none; 
+        -webkit-appearance: none;  
+    } 
+    .contact-input-item select, .contact-input-item select option{
+        color: #787878;
+        font-size: 18px; 
+        font-family: 'BPG Arial'; 
+    } 
+    .c-select{
+        width: calc((100% / 4) + 70px); 
+        position: relative;
+    } 
+    .c-select::after{
+        position: absolute;
+        content: url(../img/select-arrow.svg);
+        right: 25px;
+        bottom: 22px; 
+        z-index: 9; 
+    }
+    .c-email{
+        width: calc((100% / 4)); 
+    }
+    .c-name, .c-lastname{
+        width: calc((100% / 4) - 80px); 
+    }
+    .c-texarea{
+        width: 100%; 
+    }
+    .c-texarea textarea{
+        height: 148px;
+    }
+    .button-for-box{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        overflow: hidden;
+    }
+    .form-button{ 
+        padding-top: 20px;
+        padding-bottom: 15px;
+        padding-left: 40px;
+        padding-right: 40px;
+        width: fit-content;
+        background: linear-gradient(to right, #8A2BE2 0%, #4863E1 50%);  
+        border: none;
+        appearance: none;
+        cursor: pointer;
+        font-size: 22px;
+        font-weight: bold;
+        font-family: 'TBC Contractica CAPS'; 
+        border-radius: 6px;
+        position: relative;
+        color: #fff;
+    }
+    .form-button::before{
+        position: absolute;
+        content: "";
+        left: -2065px;
+        top: 50%;
+        width: 2000px;
+        height: 2px;
+        background: #DBDBDB;
+    }
+    .c-texarea label::after{
+        position: absolute;
+        content: "*";
+        top: -2px;
+        right: -8px;
+        color: #EC1C24;
+    } 
+    /* Contact Page */
+
 
 
 
