@@ -143,7 +143,7 @@ a{
     cursor: pointer;
 }
 .active-lang-box ul{
-    max-height: 300px;
+    max-height: 300px!important;
     border: 1px solid #4367E1;
 }
  
@@ -285,6 +285,7 @@ a{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 42px;
 }
 .circle-item{
@@ -375,7 +376,7 @@ a{
     fill: #4A7FBE;
 }
 .active-text-height{
-    max-height: 1000px;
+    max-height: 4000px!important;
 }
 .rotate-arrow{
     transform: rotate(180deg);
@@ -531,6 +532,7 @@ a{
     .image img{
         width: 100%;
         height: 100%;
+        object-fit: cover;
     }
     .image iframe{
         width: 100%;
@@ -1273,7 +1275,7 @@ a{
         font-family: 'BPG Arial';  
         height: 60px;
         resize: none; 
-        -webkit-appearance: none;  
+        appearance: none;  
     } 
     .contact-input-item select, .contact-input-item select option{
         color: #787878;
@@ -1290,6 +1292,7 @@ a{
         right: 25px;
         bottom: 22px; 
         z-index: 9; 
+        pointer-events: none;
     }
     .c-email{
         width: calc((100% / 4)); 
@@ -1343,6 +1346,13 @@ a{
         color: #EC1C24;
     } 
     /* Contact Page */
+
+    /* burger-menu */
+    .burger-menu-box, .burger-lines{
+        display: none;
+    }
+    /* burger-menu */
+
 
 
 

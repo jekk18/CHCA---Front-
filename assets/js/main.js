@@ -72,6 +72,12 @@ $('.show-more-load').click(function(){
   $(this).toggleClass('rotate-arrow');
 });
 
+$('.burger-lines').click(function() {
+  $(this).toggleClass('active-burger-line')
+  $('.burger-menu-box').toggleClass('active-burger-menu') 
+    $(".header").toggleClass("active-burger-header") 
+})
+
 $(document).ready(function() {
   $('.counter').each(function() {
     var $this = $(this);
@@ -108,16 +114,25 @@ $('.click-arrow').click(function(){
       nav: true, 
       autoplay:true,
       autoplayTimeout:3000, 
-      dots: false,
+      dots: true,
       responsive: {
         0: {
           items: 1
         },
-        600: {
+        420: {
+          items: 2
+        },
+        768: {
           items: 3
         },
-        1400:{
+        991: {
+          items: 3
+        },
+        1200: {
           items: 4
+        },
+        1600:{
+          items: 5
         },
         1920: {
           items: 5
@@ -133,11 +148,20 @@ $('.click-arrow').click(function(){
         0: {
           items: 1
         },
-        600: {
+        420: {
+          items: 2
+        },
+        768: {
           items: 3
         },
-        1400:{
+        991: {
+          items: 3
+        },
+        1200: {
           items: 4
+        },
+        1600:{
+          items: 5
         },
         1920: {
           items: 5
@@ -154,11 +178,20 @@ $('.click-arrow').click(function(){
         0: {
           items: 1
         },
-        600: {
+        420: {
+          items: 2
+        },
+        768: {
           items: 3
         },
-        1400:{
+        991: {
+          items: 3
+        },
+        1200: {
           items: 4
+        },
+        1600:{
+          items: 5
         },
         1920: {
           items: 5
@@ -175,5 +208,7 @@ $('.click-arrow').click(function(){
   });
   
 // Carousell
+ 
+ 
 
  
