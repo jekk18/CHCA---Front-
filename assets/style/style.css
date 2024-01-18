@@ -996,7 +996,7 @@ a{
     /* Services detail page */
     .services-content{
         display: flex;
-        align-items: top;
+        align-items:flex-start;
         gap: 50px;
         margin-top: 50px;
         margin-bottom: 50px;
@@ -1004,7 +1004,7 @@ a{
     .services-content .direction-content{
         margin-top: 0;
     }
-    .service-img {
+    .service-img a img{
         width: 376px;
         height: 489px;
     }

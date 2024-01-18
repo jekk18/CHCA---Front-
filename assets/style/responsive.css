@@ -238,6 +238,34 @@
     .create-box h3, .create-box a {
         font-size: 16px;
     }
+    /* Directions Page */
+    .direction-content h1 {
+        font-size: 30px; 
+        margin-bottom: 20px;
+    }
+    .direction-img-gallery { 
+        margin-top: 50px;
+        gap: 40px;
+    }
+    .img-item {
+        width: calc((100% / 3) - 30px);
+    }
+    .title-d h2 {
+        font-size: 30px; 
+    }
+    /* Directions Page */
+    /* Services Detail Page */
+    .services-content { 
+        gap: 40px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .faq-section { 
+        padding-bottom: 60px;
+    }
+    /* Services Detail Page */
+
+
 }
 
 @media (max-width: 1221px){
@@ -414,6 +442,30 @@
         width: 100%;
         padding: 40px 0;
     }
+    /* Directions Page */
+    .direction-content h1 {
+        font-size: 26px; 
+    }
+    .title-d h2 {
+        font-size: 26px;
+    }
+    /* Directions Page */
+    /* Services Detail Page */
+    /* Services Detail Page */
+    .services-content { 
+        gap: 40px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .faq-section { 
+        padding-bottom: 55px;
+    }
+    /* Services Detail Page */
+    .faq-text h1 {
+        font-size: 20px;
+    }
+    /* Services Detail Page */
+
 }
 @media (max-width: 1024px){
     .handle-container{
@@ -656,6 +708,32 @@
         width: 100px;
         height: 100px;
     }
+     /* Directions Page */
+     .img-item {
+        width: calc((100% / 2) - 20px);
+    }
+    .direction-content {
+        width: 100%;
+        margin-top: 40px;
+        padding-bottom: 40px;
+    }
+    .direction-content h1 {
+        font-size: 24px; 
+    }
+    .title-d h2 {
+        font-size: 24px;
+    }
+    /* Directions Page */
+    /* Services Detail Page */
+    .service-img a img {
+        width: 320px;
+        height: 410px;
+    }
+    .faq-section{
+        padding-top: 0;
+    }
+    /* Services Detail Page */
+
 }
 @media (max-width: 768px){
     .handle-container{
@@ -755,6 +833,83 @@
     #owl-slider-1-item .owl-nav button.owl-next {
         right: 3.5%;
     }
+    /* Directions Page */
+    .img-item {
+        width: calc((100% / 2) - 10px);
+    }
+    .direction-content {
+        width: 100%;
+        margin-top: 30px;
+        padding-bottom: 40px;
+    }
+    .direction-content .text {
+        font-size: 18px;
+        line-height: 28px; 
+    }
+    .direction-content h1 {
+        font-size: 22px; 
+        margin-bottom: 12px;
+    }
+    .img-item img { 
+        height: 380px; 
+    }
+    .direction-img-gallery {
+        margin-top: 40px;
+        gap: 30px 20px;
+    }
+    .img-item-text { 
+        padding: 6px; 
+        font-size: 16px; 
+        line-height: 24px; 
+    }
+    .title-d {
+        margin-bottom: 30px;
+    }
+    .title-d h2 {
+        font-size: 22px;
+    }  
+    /* Directions Page */
+    /* Services Detail Page */
+    .service-img  {
+        display: none;
+    } 
+    .services-content {
+        gap: 40px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+    .faq-section {
+        padding-bottom: 45px;
+    }
+    .faq-text h1 {
+        font-size: 16px;
+    }
+    .faq-text .text {
+        font-size: 16px;  
+        line-height: 22px;  
+    }
+    .faq-item-active .faq-text .text{
+        margin-top: 10px;
+    }
+    .faq-item { 
+        padding-left: 18px; 
+        min-height: 81px;
+    }
+    .click-arrow {
+        width: 40px;
+        height: 40px;
+        padding-left: 4px;
+        padding-top: 3px;
+    }
+    .click-arrow span svg{
+        height: 18px;
+    }
+    .faq-text { 
+        padding: 20px;
+        padding-top: 20px;
+        padding-left: 40px;
+    }
+    /* Services Detail Page */
 }
 @media (max-width: 575px){
     .handle-container{
@@ -780,7 +935,7 @@
         margin-bottom: 10px;
     }
     .banner-text-box {
-        top: 40%;
+        top: 44%;
         transform: translateY(-35%);
     }
     .down-scroll-box {
@@ -988,6 +1143,41 @@
         width: 100%;
         padding-left: 0;
     }
+    /* Directions Page */
+    .direction-content h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .direction-content .text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .direction-img-gallery { 
+        gap:30px;
+    }
+    .img-item {
+        width: 100%;
+    }
+    .img-item img {
+        height: 398px;
+    }
+    .img-item-text {
+        padding: 15px 5px; 
+    }
+    .title-d h2 {
+        font-size: 18px;
+    }
+    /* Directions Page */
+     /* Services Detail Page */
+     .faq-section {
+        padding-bottom: 40px;
+    }
+    .faq-text .text {
+        font-size: 14px;  
+        line-height: 20px;  
+    }
+     /* Services Detail Page */
+
 }
 @media (max-width: 420px){
     .image {
