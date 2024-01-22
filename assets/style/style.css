@@ -1304,6 +1304,7 @@ a{
         width: 100%; 
     }
     .c-texarea textarea{
+        padding-top: 10px;
         height: 148px;
     }
     .button-for-box{

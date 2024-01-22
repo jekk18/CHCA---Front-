@@ -65,6 +65,7 @@
     .text-c-s .slider-link-text{
         font-size: 26px;
     }
+   
 }
 @media (max-width: 1441px){
     .handle-container{
@@ -265,6 +266,28 @@
     }
     /* Services Detail Page */
 
+   /* Search */
+   .search-form { 
+    margin-bottom: 70px;
+    }
+    .result-item { 
+        gap: 30px; 
+    }
+    .result-item .text { 
+        -webkit-line-clamp: 5; 
+    } 
+    /* Search */
+    /* Contact */
+    .c-fortm-box { 
+        gap: 20px;
+    }
+    .c-name, .c-lastname {
+        width: calc((100% / 4) - 65px);
+    }
+    .contact-box h1{
+        font-size: 28px;
+    }
+    /* Contact */
 
 }
 
@@ -465,7 +488,27 @@
         font-size: 20px;
     }
     /* Services Detail Page */
-
+    .results-box { 
+        gap: 50px;
+    }
+     /* Contact */
+     .contact-box h1 {
+        font-size: 26px;
+    }
+    .contact-box h1 {
+        margin-bottom: 30px;
+    }
+    .contact-input-item select, .contact-input-item select option { 
+        font-size: 16px; 
+    }
+    .form-button { 
+        font-size: 18px; 
+    }
+    .contact-section { 
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+      /* Contact */
 }
 @media (max-width: 1024px){
     .handle-container{
@@ -733,6 +776,40 @@
         padding-top: 0;
     }
     /* Services Detail Page */
+    /* Search */
+    .search-banner {
+        height: 400px; 
+    }
+    .search-section {
+        padding-top: 40px;
+        padding-bottom: 60px; 
+    }
+    .result-item a { 
+        font-size: 24px; 
+    }
+    .result-item { 
+        gap: 20px; 
+    }
+    .search-form { 
+        margin-bottom: 50px;
+    }
+    /* Search */
+    /* Contact */
+    .c-email {
+        width: calc((100% / 2) - 10px);
+    }
+    .c-select {
+        width: calc((100% / 2) - 10px);
+        position: relative;
+    }
+    .c-name, .c-lastname {
+        width: calc((100% / 2) - 10px);
+    }
+    .contact-box h1 {
+        margin-bottom: 25px;
+        font-size: 22px;
+    }
+    /* Contact */
 
 }
 @media (max-width: 768px){
@@ -909,7 +986,61 @@
         padding-top: 20px;
         padding-left: 40px;
     }
-    /* Services Detail Page */
+    /* Services Detail Page */ 
+    /* Search */
+    .search-form {
+        max-width: 550px; 
+        margin-bottom: 45px;
+    }
+    .input-box button span svg{
+        width: 30px;
+    }
+    .result-item a {
+        font-size: 22px;
+    }
+    .results-box { 
+        gap: 40px;
+    }
+    .result-item .text {
+        font-size: 18px;
+        line-height: 27px;  
+        display: initial;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: initial;
+        overflow: initial;
+    }
+    .pagination-box { 
+        gap: 20px;
+    }
+    .pagination-box button { 
+        padding: 11px 30px;
+        font-size: 18px; 
+    }
+    .pagintaion {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .search-banner {
+        height: 340px;
+    }
+    /* Search */
+      /* Contact */
+      .c-email {
+        width: 100%;
+    }
+    .c-select {
+        width: 100%;
+        position: relative;
+    }
+    .c-name, .c-lastname {
+        width: 100%;
+    }
+    .contact-box h1 {
+        margin-bottom: 25px;
+        font-size: 22px;
+    }
+    /* Contact */
+
 }
 @media (max-width: 575px){
     .handle-container{
@@ -1177,6 +1308,97 @@
         line-height: 20px;  
     }
      /* Services Detail Page */
+      /* Search */
+      .search-banner {
+        height: 280px;
+    }
+    .search-form {
+        max-width: 100%;
+        margin-bottom: 40px;
+        padding: 0 16px;
+    }
+    .search-section {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    .input-box { 
+        height: 40px;
+    }
+    .input-box input {
+        padding-bottom: 10px; 
+        font-size: 14px; 
+    }
+    .input-box button span svg {
+        width: 24px;
+        height: 24px;
+    }
+    .search-form .results-label {
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 400; 
+    }
+    .result-item a {
+        font-size: 18px;
+    }
+    .result-item {
+        gap: 10px;
+    }
+    .result-item .text {
+        font-size: 14px;
+        line-height: 20px; 
+    }
+    .pagintaion {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .pagination-box button {
+        padding: 7px 26px;
+        font-size: 14px;
+    }
+    .pagination-box {
+        gap: 17px;
+    }
+    /* Search */
+    /* Contact */
+    .contact-section {
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    .contact-box h1 {
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    .contact-input-item label { 
+        margin-bottom: 11px;
+        line-height: 21px; 
+        font-size: 14px; 
+    }
+    .c-select::after { 
+        right: 19px;
+        bottom: 14px; 
+    }
+    .contact-input-item input, .contact-input-item textarea, .contact-input-item select { 
+        padding: 0 20px;
+        font-size: 16px; 
+        height: 45px; 
+    }
+    .c-texarea textarea {
+        height: 100px;
+    }
+    .contact-input-item select, .contact-input-item select option {
+        font-size: 14px;
+    }
+    .form-button {
+        padding-top: 14px;
+        padding-bottom: 10px;
+        padding-left: 27px;
+        padding-right: 26px; 
+        font-size: 14px;  
+    }
+    .form-button::before { 
+        left: -2030px;
+    }
+    /* Contact */
 
 }
 @media (max-width: 420px){
