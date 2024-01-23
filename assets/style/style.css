@@ -1354,6 +1354,19 @@ a{
     }
     /* burger-menu */
 
+    html:lang(abk) .abk-title,
+    html:lang(oss) .abk-title{
+        font-family: 'BPG Arial Caps 2010';
+        font-weight: 400;
+    }
+
+
+
+
+
+
+    
+
 
 
 
